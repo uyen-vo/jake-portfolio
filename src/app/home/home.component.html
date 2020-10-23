@@ -32,20 +32,23 @@
     </span> -->
   </header>
   
-  <div class="main-container">
+  <!-- <div class="main-container"> -->
     <div class="router-container">
-      <div *ngFor="let item of projects$ | async">
-        <app-project-item></app-project-item>
+      <div class="items">
+        <div class="project-item" *ngFor="let item of projects$ | async">
+          <app-project-item></app-project-item>
+        </div>
       </div>
       <router-outlet></router-outlet>
     </div>
-  </div>
+  <!-- </div> -->
+
+  <footer>
+    <ul>
+      <li><img src="../../assets/social-email.svg"/></li>
+      <li><img src="../../assets/social-linkedin.svg"/></li>
+    </ul>
+  </footer>
 </div>
 
 
-<footer>
-  <ul>
-    <li><img src="../../assets/social-email.svg"/></li>
-    <li><img src="../../assets/social-linkedin.svg"/></li>
-  </ul>
-</footer>

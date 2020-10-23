@@ -10,4 +10,11 @@
   "preview-image": "../assets/project-2.jpg",
   "images": []
 }
+,
+{
+  "title": "Project 3",
+  "description": "This is my description",
+  "preview-image": "../assets/project-2.jpg",
+  "images": []
+}
 ]
