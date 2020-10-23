@@ -1,37 +1,116 @@
+// $lightblue: #9ab9e2;
+
 .wrapper {
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  // padding: 20px;
 }
 
+header {
+  // width: 250px;
+  // background-color: lightblue;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 17px;
+  // flex: 1;
+  //  div {
+  //    flex: 1;
+  //  }
+  // color: white;
+}
+
+// .resume {
+//   // border: 1px solid red;
+//   p {
+//     text-align: right;
+//     padding: 0; margin: 0;
+//     padding-right: 20px;
+//     margin-bottom: 5px;
+
+//     span {
+//       text-transform: uppercase;
+//       letter-spacing: .2px;
+//       background-color: yellow;
+//       padding: 0 2px;
+//     }
+//   }
+// }
+
+.intro {
+  flex: 3;
+}
 .name {
+  // text-align: center;
+  min-width: 280px;
+  margin-right: 30px;
+  flex: 1;
+  
   p {
     padding: 0; margin: 0;
-    text-transform: uppercase;
+    margin-top: 5px;
+
+    span {
+      text-transform: uppercase;
+      letter-spacing: .2px;
+      background-color: white;
+      padding: 0 2px;
+    }
   }
 
   h1 {
     padding: 0; margin: 0;
-    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: .3px;
+    font-size: 40px;
+    // line-height: 20px;
+    span {
+      // padding-bottom: 5px;
+      // // border-bottom: 1px dashed black;
+    }
     
+    span:hover{
+      color: white;
+      cursor: pointer;
+    }
   }
 }
 
-header {
-  width: 250px;
+.main-container {
+  flex: 1;
+  padding: 20px 0px;
+  width: 70%;
+  margin: 0 auto;
 }
 
-.router-container {
-  flex: 1;
+.contact {
+  margin-top: 10px;
+  
+  span {
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    background-color: yellow;
+    padding: 0 2px;
+    margin-right: 5px;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background-color: black;
+      
+    }
+  }
 }
 
 footer {
-  ul {
-    list-style-type: none;
-    margin:0; padding: 0;
+  background-color: lightblue;
+}
 
-    li {
-      margin:0; padding: 0;
-    }
+ul {
+  list-style-type: none;
+  margin:0; padding: 0;
+
+  li {
+    margin:0; padding: 0;
   }
 }
