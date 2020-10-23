@@ -1,0 +1,13 @@
+[{
+  "title": "Project 1",
+  "description": "This is my description",
+  "preview-image": "../assets/project-1.jpg",
+  "images": []
+},
+{
+  "title": "Project 2",
+  "description": "This is my description",
+  "preview-image": "../assets/project-2.jpg",
+  "images": []
+}
+]
