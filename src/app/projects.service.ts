@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
+// import { map } from 'rxjs/operators';
+
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -7,9 +10,7 @@ export class ProjectsService {
 
   constructor(private http: HttpClient) { }
 
-  public getJSON(): Observable<any> {
-    return this.http.get("./file.json")
-                    .map((res:any) => res.json())
-                    .catch((error:any) => console.log(error));
+  public getJSON(): any {
+    return this.http.get('../assets/projects.json');
   }
 }
