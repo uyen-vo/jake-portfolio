@@ -1,13 +1,18 @@
 [{
   "url": "project-1",
-  "title": "Project 1 [WIP]",
+  "next": "project-2",
+  "back": "project-4",
+  "wip": "true",
+  "title": "Project 1",
   "topics": ["material design"],
   "description": "This is my description.",
   "preview": "../assets/temp.jpg",
-  "images": []
+  "images": ["../assets/temp-sky.jpg", "../assets/temp.jpg"]
 },
 {
   "url": "project-2",
+  "next": "project-3",
+  "back": "project-1",
   "title": "Project 2",
   "topics": ["topic 1", "topic 2"],
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -16,6 +21,8 @@
 },
 {
   "url": "project-3",
+  "next": "project-4",
+  "back": "project-2",
   "title": "Project 3",
   "topics": ["something", "something"],
   "description": "This is my description.",
@@ -24,6 +31,8 @@
 },
 {
   "url": "project-4",
+  "next": "project-1",
+  "back": "project-3",
   "title": "Project 4",
   "topics": ["nanotechnology", "butt"],
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",

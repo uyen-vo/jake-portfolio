@@ -1,8 +1,11 @@
 <div class="detail-wrapper" *ngIf="project">
   <div class="title">
-    <div><span><a routerLink="/">< Go back</a></span></div>
+    <div><span><a routerLink="/">< All projects</a></span></div>
     <h1>{{project.title}}</h1>
-    <div><span>View another project ></span></div>
+    <div>
+      <span><a [routerLink]="['/' + project.back]">< Back</a></span> 
+      <span><a [routerLink]="['/' + project.next]">Next ></a></span>
+    </div>
   </div>
   <div class="prev-images">
     <div *ngFor="let img of project.images" class="img-container">

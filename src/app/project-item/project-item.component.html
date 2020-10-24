@@ -2,7 +2,7 @@
   <div class="img-container"><img [src]="project.preview"/></div>
 
   <div class="headline">
-    <h1>{{project.title}}</h1>
+    <h1>{{project.title}} <span *ngIf="project.wip">[WIP]</span></h1>
     <p>
       <span *ngFor="let t of project.topics">{{t}}</span>
     </p>
