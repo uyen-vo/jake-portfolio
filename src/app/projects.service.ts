@@ -33,7 +33,6 @@ export class ProjectsService {
         if (filtered.length > 0) {
           return filtered[0];
         }
-
         return null;
       }));
   }

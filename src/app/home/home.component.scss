@@ -3,7 +3,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  // height: 100vh;
   // padding: 20px;
 }
 
@@ -84,6 +84,7 @@ header {
     padding-bottom: 2px;
     // border-radius: 10px;
     border: 2px dashed black;
+    display: none;
 
     p span{
       background-color: transparent;
@@ -125,9 +126,11 @@ header {
 
 .router-container {
   flex: 1;
-  // width: 80%;
+  // width: 100%;
   margin: 0 auto;
-  padding: 20px 10%;
+  padding: 40px 10%;
+  background-color: lightgray;
+  // border: 1px solid blue;
 }
 
 .contact {
@@ -143,7 +146,7 @@ header {
 
     &:hover {
       color: white;
-      background-color: #647f87;
+      background-color: black;
       
     }
 
@@ -158,7 +161,7 @@ header {
 }
 
 footer {
-  padding: 20px 0px;
+  padding: 25px 0;
   text-align: center;
   background-color: white;
 }

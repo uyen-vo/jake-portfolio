@@ -15,6 +15,13 @@ h1 {
 }
 
 .item-wrapper{
+  &:hover {
+
+    img {
+      filter:  saturate(1.5);
+    }
+    // filter: hue-rotate(90deg);
+  }
 }
 
 .headline {
@@ -31,11 +38,5 @@ h1 {
     object-fit: cover;
     overflow: hidden;
     transition: .2s ease-in filter;
-
-    &:hover {
-
-      filter:  saturate(1.5);
-      // filter: hue-rotate(90deg);
-    }
   }
 }

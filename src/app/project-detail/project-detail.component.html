@@ -1,3 +1,18 @@
 <div class="detail-wrapper" *ngIf="project">
-  hello
+  <div class="title">
+    <div><span><a routerLink="/">< Go back</a></span></div>
+    <h1>{{project.title}}</h1>
+    <div><span>View another project ></span></div>
+  </div>
+  <div class="prev-images">
+    <div *ngFor="let img of project.images" class="img-container">
+      <img [src]="img"/>
+    </div>
+  </div>
+
+  <p>Mauris porttitor nisl gravida tempor elementum. Sed consectetur euismod lorem, quis egestas enim vulputate accumsan. In hac habitasse platea dictumst. Aenean sit amet tincidunt orci. Nam finibus vestibulum augue ac viverra. Aenean dolor erat, ultricies eget fringilla vitae, rhoncus ut velit. Fusce mattis malesuada ex nec tempus. Fusce neque dolor, ultrices vitae tempor vitae, vestibulum in turpis. Suspendisse vitae suscipit mauris, sit amet molestie enim. Nulla facilisi. In hac habitasse platea dictumst.</p>
+
+  <p>Nunc interdum euismod nulla ut placerat. Morbi cursus aliquam libero, in euismod quam condimentum a. Integer mollis aliquam neque, eget tempor sapien egestas sed. Sed convallis diam a tempor aliquam. Duis at augue a quam gravida condimentum. Cras ut est sit amet velit dignissim cursus vel nec diam. Donec volutpat lacus sit amet metus aliquet, vitae ullamcorper nisl feugiat. Nulla quam sapien, dapibus sit amet facilisis at, vehicula eget augue. Morbi quis auctor quam. Nullam suscipit enim fermentum magna cursus, non laoreet velit finibus.</p>
+  
+  <p>In porta, nisl et commodo faucibus, odio erat elementum risus, eget fringilla augue leo vel augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eget neque tincidunt, egestas sem eu, efficitur mi. Cras dignissim fringilla vestibulum. Vivamus nec lacus diam. Fusce iaculis nec dui ut ultrices. Suspendisse mattis sollicitudin diam vitae commodo.</p>
 </div>

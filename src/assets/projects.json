@@ -12,12 +12,12 @@
   "topics": ["topic 1", "topic 2"],
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   "preview": "../assets/temp.jpg",
-  "images": []
+  "images": ["../assets/temp.jpg", "../assets/temp.jpg", "../assets/temp.jpg"]
 },
 {
   "url": "project-3",
   "title": "Project 3",
-  "topics": ["something", "something", "something"],
+  "topics": ["something", "something"],
   "description": "This is my description.",
   "preview": "../assets/temp.jpg",
   "images": []

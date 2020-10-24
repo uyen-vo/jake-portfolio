@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProjectsService } from '../projects.service';
+import { Project, ProjectsService } from '../projects.service';
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./project-detail.component.scss']
 })
 export class ProjectDetailComponent implements OnInit {
-  project: any;
+  project: Project;
 
   constructor(
     private route: ActivatedRoute,
@@ -18,7 +18,7 @@ export class ProjectDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params
-      .pipe(map(p => p.url))
+      .pipe(map(p => p.project))
       .subscribe(url => {
         this.projectsService.getProjectByUrl(url)
           .subscribe(proj => this.project = proj);
