@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ProjectsService } from '../projects.service';
+import { Project, ProjectsService } from '../projects.service';
 
 @Component({
   selector: 'app-projects',
@@ -9,7 +9,7 @@ import { ProjectsService } from '../projects.service';
 })
 export class ProjectsComponent implements OnInit {
   
-  projects$: Observable<any>;
+  projects$: Observable<Project[]>;
 
   constructor(private projectsService: ProjectsService) { }
 
