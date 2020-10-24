@@ -8,7 +8,7 @@
     </div> -->
     <!-- <div></div> -->
     <div class="name">
-      <h1><span>Jake Reiff</span></h1>
+      <h1><span><a routerLink="/">Jake Reiff</a></span></h1>
       <p><span>University of Texas at Dallas</span></p>
       <p><span>B.S. Mechanical Engineering</span></p>
       <p><span>Class of 2021</span></p>
@@ -19,14 +19,14 @@
       </div>
     </div>
 
-    <div class="intro">
+    <!-- <div class="intro">
       <p>Interested in working with...</p>
       <ul>
         <li>- Nanotechnology</li>
         <li>- Self-driving cars</li>
         <li>- Weeb life</li>
       </ul>
-    </div>
+    </div> -->
     <!-- <div class="resume">
       <p><span>Resume</span></p>
       <p><span>E-mail</span></p>
@@ -39,11 +39,6 @@
   
   <!-- <div class="main-container"> -->
     <div class="router-container">
-      <div class="items">
-        <div class="project-item" *ngFor="let p of projects$ | async">
-          <app-project-item [project]="p"></app-project-item>
-        </div>
-      </div>
       <router-outlet></router-outlet>
     </div>
   <!-- </div> -->

@@ -1,0 +1,6 @@
+<div class="items">
+    <div [routerLink]="['/' + p.url]" class="project-item" *ngFor="let p of projects$ | async">
+        <app-project-item [project]="p"></app-project-item>
+        <p><span>View more</span></p>
+    </div>
+</div>
