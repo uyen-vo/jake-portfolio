@@ -14,6 +14,21 @@ h1 {
   margin:0; padding: 0;
 }
 
-.item-wrapper {
+.item-wrapper{
+}
+
+.headline {
   padding: 20px;
+}
+
+.img-container {
+  // border: 1px solid red;
+  height: 300px;
+  img {
+    filter: hue-rotate(100deg);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
 }

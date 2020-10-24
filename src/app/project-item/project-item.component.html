@@ -1,10 +1,11 @@
 <div class="item-wrapper">
+  <div class="img-container"><img [src]="project.preview"/></div>
 
-  <h1>Project Title</h1>
-  <p>
-    <span>Topic 1</span>
-    <span>Topic 2</span>
-    <span>Topic 3</span>
-  </p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="headline">
+    <h1>{{project.title}}</h1>
+    <p>
+      <span *ngFor="let t of project.topics">{{t}}</span>
+    </p>
+    <p>{{project.description}}</p>
+  </div>
 </div>

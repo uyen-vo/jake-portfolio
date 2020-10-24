@@ -1,20 +1,27 @@
 [{
   "title": "Project 1",
-  "description": "This is my description",
-  "preview-image": "../assets/project-1.jpg",
+  "topics": ["material design"],
+  "description": "This is my description.",
+  "preview": "../assets/temp.jpg",
   "images": []
 },
 {
   "title": "Project 2",
-  "description": "This is my description",
-  "preview-image": "../assets/project-2.jpg",
+  "topics": ["topic 1", "topic 2"],
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "preview": "../assets/temp.jpg",
   "images": []
-}
-,
+},
 {
   "title": "Project 3",
-  "description": "This is my description",
-  "preview-image": "../assets/project-2.jpg",
+  "description": "This is my description.",
+  "preview": "../assets/temp.jpg",
+  "images": []
+},
+{
+  "title": "Project 4",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "preview": "../assets/temp.jpg",
   "images": []
 }
 ]
